@@ -93,7 +93,7 @@
   (vector "The Knights who says NI" 1 "Shrubbery")) 
 
 (defn tilfoejTilVector "conj funktionen
-                        Det tilføjede bliver indsat TIL SIDST i vectoren"
+                        Det tilføjede bliver indsat TILSIDST i vectoren"
   []
   (conj ["What is your favorite color?" :blue false] "but it is blueeeee"))
 
@@ -101,5 +101,13 @@
                   I en liste kan man ikke bruge ''get'' til opslag!
                   NOTE det er hurtigere at lave opslag på en vector!"
   [] 
-  (nth ()))
+  (nth '(1 2 3) 1)) #_" Husk! lister er 0-indexserede"
 
+(defn opretListe "list funktionen"
+  []
+  (list 1 "to" 3 "og" 4))
+
+(defn tilfoejTilListe "conj funktionen
+                       Det tilføjede bliver indsat FØRST i list"
+  []
+  (conj '("er det klogeste ord") "Hakunamatata"))

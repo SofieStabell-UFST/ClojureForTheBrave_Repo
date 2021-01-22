@@ -38,3 +38,18 @@ clj꞉clojure-noob.core꞉> 
 (opretVector)
 ["The Knights who says NI" 1 "Shrubbery"]
 clj꞉clojure-noob.core꞉> 
+#'clojure-noob.core/listOpslag
+clj꞉clojure-noob.core꞉> 
+(listOpslag)
+2
+clj꞉clojure-noob.core꞉> 
+#'clojure-noob.core/opretListe
+clj꞉clojure-noob.core꞉> 
+(opretListe)
+(1 "to" 3 "og" 4)
+clj꞉clojure-noob.core꞉> 
+#'clojure-noob.core/tilfoejTilListe
+clj꞉clojure-noob.core꞉> 
+(tilfoejTilListe)
+("Hakunamatata" "er det klogeste ord")
+clj꞉clojure-noob.core꞉> 
