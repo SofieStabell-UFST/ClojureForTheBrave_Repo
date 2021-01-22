@@ -8,6 +8,7 @@
 (def vectorNavn ["Harry Potter" "Peter Kanin"])
 (def mapNavn {:fornavn "Anders" :efternavn "And" :alder 55}) ; :key value
 (def nestedMapNavn {:navn {:fornavn "Mickey" :efternavn "Mouse"}})
+(def listNavn '(3 2 1 "Ready for Takeoff!"))
 
 
 
@@ -82,3 +83,23 @@
   []
   (get-in {:husfarve {:Huffelpuf "gul" :Ravenclaw "blå"}} [:husfarve :Ravenclaw]))
  
+(defn vectorOpslag "get funktionen"
+  []
+  (get [1 2 3 "Abe" {:Kanin "Nini"}] 0)
+  #_" Husk! Vectore er 0-indexserede")
+
+(defn opretVector "vector functionen"
+  []
+  (vector "The Knights who says NI" 1 "Shrubbery")) 
+
+(defn tilfoejTilVector "conj funktionen
+                        Det tilføjede bliver indsat TIL SIDST i vectoren"
+  []
+  (conj ["What is your favorite color?" :blue false] "but it is blueeeee"))
+
+(defn listOpslag "nth funktionen
+                  I en liste kan man ikke bruge ''get'' til opslag!
+                  NOTE det er hurtigere at lave opslag på en vector!"
+  [] 
+  (nth ()))
+
